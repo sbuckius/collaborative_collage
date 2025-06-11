@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="collaborative_collage_withcutouts.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+<title>Collaborative Collage</title>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      #ui {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(255,255,255,0.9);
+        padding: 12px;
+        border-radius: 8px;
+        z-index: 10;
+      }
+      #ui label {
+        font-size: 14px;
+        margin-bottom: 6px;
+        display: block;
+      }
+      #upload {
+        margin-bottom: 8px;
+      }
+      #clearBtn, #saveBtn {
+        padding: 6px 12px;
+        font-size: 14px;
+        margin-right: 6px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #clearBtn {
+        background: #d9534f;
+        color: white;
+      }
+      #clearBtn:hover {
+        background: #c9302c;
+      }
+      #saveBtn {
+        background: #5cb85c;
+        color: white;
+      }
+      #saveBtn:hover {
+        background: #4cae4c;
+      }
+    </style>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+<div id="ui">
+      <label>Please upload a PNG that shows diversity in technology to add to the collaborative collage.</label>
+      <input type="file" id="upload" accept="image/png">
+      <br>
+      <button id="clearBtn">Clear Collage</button>
+      <button id="saveBtn">Save Image</button>
+    </div>
+
+</body>
+</html>
