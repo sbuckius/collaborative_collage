@@ -8,14 +8,15 @@ function setup() {
   imageMode(CENTER);
 
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
-  };
+  apiKey: "AIzaSyChN3xlOre5zW47yFQaxEUO1mIA9RmeYdU",
+  authDomain: "collaborative-collage.firebaseapp.com",
+  databaseURL: "https://collaborative-collage-default-rtdb.firebaseio.com",
+  projectId: "collaborative-collage",
+  storageBucket: "collaborative-collage.firebasestorage.app",
+  messagingSenderId: "421708474364",
+  appId: "1:421708474364:web:8848205cda1c321c727479",
+  measurementId: "G-50TWKSRQ9W"
+};
   firebase.initializeApp(firebaseConfig);
   db = firebase.database();
 
